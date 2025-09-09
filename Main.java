@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 
 public class Main {
    public static void main(String[] args) {
+    // hi
        JFrame f = new JFrame();
        f.setSize(800, 600);
        f.setLayout(null);
