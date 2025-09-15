@@ -81,13 +81,14 @@ public class Main {
          choose.setFont(new Font("Arial", Font.BOLD, 17));
          f.add(choose);
 
-           JLabel[]exerciseLabels = new JLabel[7];
+           JButton[]exerciseButtons = new JButton[7];
            int yy = 150;
            for (int i = 0; i < 7; i++) {
-           exerciseLabels[i] = new JLabel("Day " + (i + 1) + ": ");
-           exerciseLabels[i].setBounds(30, yy, 400, 60);
-           exerciseLabels[i].setFont(new Font("Arial", Font.PLAIN, 24));
-           f.add(exerciseLabels[i]);
+           exerciseButtons[i] = new JButton("Day " + (i + 1) + ": "+inputFields[i+1].getText());
+           exerciseButtons[i].setBackground(green);
+           exerciseButtons[i].setBounds(30, yy, 400, 60);
+           exerciseButtons[i].setFont(new Font("Arial", Font.PLAIN, 24));
+           f.add(exerciseButtons[i]);
            yy += 50;
        }
 
